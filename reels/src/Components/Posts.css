@@ -1,0 +1,84 @@
+.video-container{
+    height: 80vh;
+    border-radius: 20px;
+    background-color: white;
+    overflow: scroll;
+    scroll-snap-type: y mandatory;
+    scrollbar-width: none;
+}
+
+.video-container::-webkit-scrollbar {
+    display: none;
+}
+
+.videos{
+    position: relative;
+}
+
+.fa{
+    position: absolute;
+    bottom: 7%;
+    left: 10%;
+}
+
+.fa h4{
+    margin: 0;
+    color: white;
+    margin-top: 8%;
+    margin-left: 25%;
+}
+
+.icon-styling{
+    position: absolute;
+    bottom: 2%;
+    left: 12%;
+}
+
+.like{
+    cursor: pointer;
+    color : #e74c3c
+}
+
+.unlike{
+    cursor: pointer;
+    color: white;
+}
+
+.chat-styling{
+    color: white;
+    position: absolute;
+    bottom: 2%;
+    left: 25%;
+}
+
+.modal-container{
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+
+.video-modal{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.video-modal video{
+    height: 85vh;
+}
+
+.comment-modal{
+    width: 50%;
+    height: 100%;
+}
+
+.unlike2{
+    color: black;
+    cursor: pointer;
+}
+
+.card1{
+    height: 70vh;
+}

@@ -1,0 +1,12 @@
+{
+    "document" : {
+        "id":null,
+        "skinCd":""
+    },
+    "education" : null,
+    "contact" : null,
+    "auth":{
+        "loading":false,
+        "error":""
+    }
+}

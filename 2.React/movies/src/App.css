@@ -1,0 +1,134 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.banner-card{
+    width: 100vw;
+    margin-top: 1vh;
+    margin-bottom: 3vh;
+    position: relative;
+    height: 70vh;
+    color: white;
+}
+
+.banner-img{
+  height: 70vh;
+  width: 100%;
+}
+
+.banner-title{
+  position: absolute;
+  top: 45vh;
+  left: 5vw;
+}
+
+.banner-text{
+  position: absolute;
+  top: 55vh;
+  left: 5vw;
+  height: 4.5rem;
+  overflow: hidden;
+  margin-right: 5vw;
+}
+
+.movies-list{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1rem;
+  justify-content: center;
+}
+
+.movies-card{
+  width: 20vw;
+  margin: 1rem;
+  color: white;
+  position: relative;
+}
+
+.movies-title{
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+
+}
+
+.movies-button{
+  position: absolute;
+  bottom: 2rem;
+}
+/* style={{height:'40vh',width:'20vw'}} */
+.movies-img{
+  height: 40vh;
+  width: 20vw;
+}
+
+.favourites-genres{
+  padding: 3rem;
+}
+
+.favourites-table{
+  padding: 3rem;
+  overflow: auto;
+}
+
+@media screen and (max-width:400px){
+  .banner-card{
+    height:30vh;
+  }
+  .banner-img{
+    height: 30vh;
+  }
+  .banner-title{
+    top: 12vh;
+    left: 5vw
+  }
+  .banner-text{
+    top: 17vh;
+    left: 5vw;
+  }
+  .movies-card{
+    width: 40vw;
+    margin: 0.1rem;
+  }
+  .movies-button{
+    width: 80%;
+  }
+  .movies-img{
+    width: 40vw;
+  }
+}
