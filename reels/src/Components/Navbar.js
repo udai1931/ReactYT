@@ -135,7 +135,7 @@ export default function Navbar({userData}) {
               onClick={handleProfileMenuOpen}
               color="inherit"
             >
-              <Avatar src={userData.profileUrl}  sx={{height:'2rem',width:'2rem'}}/>
+              <Avatar src={userData?.profileUrl}  sx={{height:'2rem',width:'2rem'}}/>
             </IconButton>
           </Box>
           <Box sx={{ display: { xs: 'flex', md: 'none' } }}>

@@ -35,14 +35,14 @@ function Profile() {
 
     useEffect(async()=>{
         if(userData!=null){
-        let parr = []
-        for(let i=0;i<userData.postIds.length;i++){
+        let parr = [];
+        for(let i=0;i<userData?.postIds?.length;i++){
             let postData = await database.posts.doc(userData.postIds[i]).get()
             parr.push({...postData.data(),postId:postData.id})
         } 
         setPosts(parr)
     }
-    })
+    },[userData])
 
     return (
         <>
@@ -61,7 +61,7 @@ function Profile() {
                                 Email : {userData.email}
                             </Typography>
                             <Typography variant="h6">
-                                Posts : {userData.postIds.length}
+                                Posts : {userData?.postIds?.length}
                             </Typography>
                         </div>
                     </div>

@@ -65,11 +65,12 @@ function Posts({userData}) {
                     {
                         posts.map((post,index)=>(
                             <React.Fragment key={index}>
+                                {console.log(post)}
                                 <div className="videos">
                                     <Video src={post.pUrl} id={post.pId}/>
                                     <div className="fa" style={{display:'flex'}}>
-                                        <Avatar src={userData.profileUrl} />
-                                        <h4>{userData.fullname}</h4>
+                                        <Avatar src={post.uProfile} />
+                                        <h4>{post.uName}</h4>
                                     </div>
                                     <Like userData={userData} postData={post}/>
                                     <ChatBubbleIcon className="chat-styling" onClick={()=>handleClickOpen(post.pId)}/>
